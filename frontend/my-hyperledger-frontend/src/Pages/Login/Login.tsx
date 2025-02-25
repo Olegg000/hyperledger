@@ -184,7 +184,7 @@ export const Login: React.FC = () => {
                             }}
                             required
                         />
-                        <input  
+                        <input
                             value= {skillYears}
                             type = "string"
                             placeholder= "Введите стаж"
