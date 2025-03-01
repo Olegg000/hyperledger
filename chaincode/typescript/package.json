@@ -1,0 +1,22 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha -r ts-node/register '/*.ts'",
+      "start": "fabric-chaincode-node start",
+      "build": "tsc",
+      "pretest": "npm run lint",
+      "lint": "tslint -c tslint.json '/*.ts'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.12.6",
+    "fabric-contract-api": "^2.5.8",
+    "fabric-shim": "^2.5.8",
+    "typescript": "^5.7.3"
+  }
+}

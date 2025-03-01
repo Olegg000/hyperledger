@@ -1,0 +1,27 @@
+{
+  "name": "jacascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node ./app.js",
+    "build": "echo 'No build step defined for JS'",
+    "pretest": "npm run lint",
+    "lint": "eslint 'app-typescript/**/*.js'",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.12.6",
+    "express": "^4.21.2",
+    "fabric-ca-client": "^2.2.20",
+    "fabric-common": "^2.2.20",
+    "fabric-contract-api": "^2.5.8",
+    "fabric-network": "^2.2.20",
+    "fabric-protos": "^2.2.20",
+    "fabric-shim": "^2.5.8",
+    "typescript": "^5.7.3"
+  }
+}
